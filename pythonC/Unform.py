@@ -31,7 +31,7 @@ def Lsense(p,W):
 def move(p,step):
     q=[]
     for i in range(len(p)):
-        q.append((p[i-step]%len(p))*pExact+(p[i-step-1]%len(p))*pUndershoot+(p[i-step]%len(p))*pOvershoot)
+        q.append((p[i-step]%len(p))*pExact+(p[i-step+1]%len(p))*pUndershoot+(p[i-step-1]%len(p))*pOvershoot)
     return q
 
 #W = ['red','green']
