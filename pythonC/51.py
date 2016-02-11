@@ -27,7 +27,7 @@ def sense(p,Observ):
             q[i][j] =(hit*pHit+(1-hit)*pMiss)*p[i][j]
 
             s += q[i][j]
-
+#normalization
     for i in range(row):
         for j in range(col):
             q[i][j] /= s
